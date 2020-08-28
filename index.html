@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Edgar Porras (@edandporras)</title>
+        <meta name="description" content="Mi nombre es Edgar Andrés Porras Andrade. Colombiano. Ingeniero de Telecomunicaciones y desarrollador autodidacta.">
+        <link rel="icon" href="img/icon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="src/bulma.css">
+        <script defer src="src/fontawesome.js"></script>
+        <script defer src="src/fa-solid.js"></script>
+        <script defer src="src/fa-brands.js"></script>
+    </head>
+    <body>
+        <section class="hero is-light is-bold is-fullheight">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-2">Edgar Porras</h1>
+                    <h2 class="subtitle is-4">Ingeniero de Telecomunicaciones</h2>
+                    <div class="content is-small">
+                        <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span>Colombia</p>
+                        <p>
+                            <span class="icon"><i class="fab fa-github"></i></span><span><a href="https://github.com/edandporras" target="blank">GitHub</a></span>
+                            <span class="icon"><i class="fab fa-linkedin"></i></span><span><a href="https://www.linkedin.com/in/edandporras/" target="blank">LinkedIn</a></span>
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <a class="button is-dark" disabled>Contactar</a>
+                        <a class="button is-dark is-outlined" disabled>Ver CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <article class="media">
+                        <div class="media-content">
+                            <form>
+                                <div class="field">
+                                    <label class="label">Nombre</label>
+                                    <div class="control"><input class="input" type="text"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control"><input class="input" type="email"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Asunto</label>
+                                    <div class="control"><input class="input" type="text"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Mensaje</label>
+                                    <div class="control"><textarea class="textarea"></textarea></div>
+                                </div>
+                                <div class="field is-grouped">
+                                    <div class="control"><button class="button is-link" type="submit">Enviar</button></div>
+                                    <div class="control"><button class="button">Cancelar</button></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="media-right"><button class="delete"></button></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
