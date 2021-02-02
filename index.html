@@ -15,10 +15,13 @@
         <section class="hero is-light is-bold is-fullheight">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title is-2">Edgar Porras</h1>
-                    <h2 class="subtitle is-4">Ingeniero de Telecomunicaciones</h2>
+                    <p class="title is-2">Edgar Porras</p>
+                    <p class="subtitle is-4">Ingeniero de Telecomunicaciones</p>
                     <div class="content is-small">
-                        <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span>Colombia</p>
+                        <p>
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Colombia</span>
+                        </p>
                         <p>
                             <span class="icon"><i class="fab fa-github"></i></span>
                             <span><a href="https://github.com/edandporras" target="blank">GitHub</a></span>
@@ -35,36 +38,35 @@
         </section>
         <div class="modal">
             <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box">
-                    <article class="media">
-                        <div class="media-content">
-                            <form>
-                                <div class="field">
-                                    <label class="label">Nombre</label>
-                                    <div class="control"><input class="input" type="text"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Email</label>
-                                    <div class="control"><input class="input" type="email"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Asunto</label>
-                                    <div class="control"><input class="input" type="text"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Mensaje</label>
-                                    <div class="control"><textarea class="textarea"></textarea></div>
-                                </div>
-                                <div class="field is-grouped">
-                                    <div class="control"><button class="button is-link" type="submit">Enviar</button></div>
-                                    <div class="control"><button class="button">Cancelar</button></div>
-                                </div>
-                            </form>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Enviar un mensaje</p>
+                    <button class="delete"></button>
+                </header>
+                <section class="modal-card-body">
+                    <form id="contacto">
+                        <div class="field">
+                            <label class="label">Nombre</label>
+                            <div class="control"><input class="input" type="text"></div>
                         </div>
-                        <div class="media-right"><button class="delete"></button></div>
-                    </article>
-                </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control"><input class="input" type="email"></div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Asunto</label>
+                            <div class="control"><input class="input" type="text"></div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Mensaje</label>
+                            <div class="control"><textarea class="textarea"></textarea></div>
+                        </div>
+                    </form>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-dark" type="submit" form="contacto">Enviar</button>
+                    <button class="button">Cancelar</button>
+                </footer>
             </div>
         </div>
     </body>
